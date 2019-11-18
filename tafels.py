@@ -22,9 +22,9 @@ while True:
         result = part1 / tafel
 
     if multiplyordivision == 1:
-        question = '%s * %s = ' % (str(part1), str(tafel))
+        question = '%s x %s = ' % (str(part1), str(tafel))
     else:
-        question = '%s / %s = ' % (str(part1), str(tafel))
+        question = '%s : %s = ' % (str(part1), str(tafel))
 
     givenread = input(question)
 
