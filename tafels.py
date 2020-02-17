@@ -8,11 +8,15 @@ max = 10
 number = 0
 part1 = 0
 
-question = "Welke tafel gaan we oefenen? : "
-tafel = int(input(question))
+question = "Welke tafels gaan we oefenen? : "
+tafels = []
+
+for tafel in input(question).split():
+    tafels.append(int(tafel))
 
 while True:
     multiplyordivision = random.randint(0, 1)
+    tafel = tafels[random.randint(0, len(tafels)-1)]
 
     if multiplyordivision == 1:  # multiply
         part1 = random.randint(1, max)
